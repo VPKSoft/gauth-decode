@@ -1,0 +1,33 @@
+name: Lint & Test package
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Sync node version and setup cache
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+          cache: 'npm' # Set this to npm, yarn or pnpm.
+
+      - name: Install frontend dependencies
+        # If you don't have `beforeBuildCommand` configured you may want to build your frontend here too.
+        run: npm install # Change this to npm, yarn or pnpm.
+
+      - name: Build
+        run:  npm run build
+        
+      - name: Lint
+        run: npm run lint
+        
+      - name: Test
+        run: npm run test
