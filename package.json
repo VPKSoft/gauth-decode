@@ -21,7 +21,7 @@
         "TOTP",
         "google",
         "authenticator",
-        "extract"
+        "decode"
     ],
     "author": "VPKSoft",
     "license": "MIT",
