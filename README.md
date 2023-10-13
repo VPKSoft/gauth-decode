@@ -1,6 +1,6 @@
 # gauth-decode
 A NPM package to decode Google Authenticator export data
-![npm](https://img.shields.io/npm/v/gauth-decode)
+[![npm](https://img.shields.io/npm/v/gauth-decode)](https://www.npmjs.com/package/gauth-decode)
 
 ## Usage
 ```typescript
