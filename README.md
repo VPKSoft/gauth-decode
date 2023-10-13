@@ -1,5 +1,6 @@
 # gauth-decode
 A NPM package to decode Google Authenticator export data
+![npm](https://img.shields.io/npm/v/gauth-decode)
 
 ## Usage
 ```typescript
@@ -34,7 +35,7 @@ The same sample data exported from Google authenticator:
 
 ![image](https://github.com/VPKSoft/gauth-decode/assets/40712699/2aa815fc-5578-4c28-abb4-26d1f5b416d1)
 
-Contained URI data: `otpauth-migration://offline?data=Ch8KBdFBKZJTEgpUZXN0IFRva2VuGgQyRkFTIAEoATACEAEYASAAKIji6ej7%2F%2F%2F%2F%2FwE%3D` and this can be decoded using this [package](#usage).
+Contained URI data: `otpauth-migration://offline?data=Ch8KBdFBKZJTEgpUZXN0IFRva2VuGgQyRkFTIAEoATACEAEYASAAKIji6ej7%2F%2F%2F%2F%2FwE%3D` and this can be decoded using this [package](#gauth-decode).
 
 
 ## Thanks to
