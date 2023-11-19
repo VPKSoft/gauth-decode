@@ -1,6 +1,7 @@
 # gauth-decode
 A NPM package to decode Google Authenticator export data
 [![npm](https://img.shields.io/npm/v/gauth-decode)](https://www.npmjs.com/package/gauth-decode)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FVPKSoft%2Fgauth-decode.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FVPKSoft%2Fgauth-decode?ref=badge_shield)
 
 ## Usage
 ```typescript
@@ -41,3 +42,7 @@ Contained URI data: `otpauth-migration://offline?data=Ch8KBdFBKZJTEgpUZXN0IFRva2
 ## Thanks to
 * [google-authenticator-exporter](https://github.com/krissrex/google-authenticator-exporter) project to which the entire code is based upon.
 * [TypeScript NPM Package Publishing: A Beginner’s Guide](https://pauloe-me.medium.com/typescript-npm-package-publishing-a-beginners-guide-40b95908e69c)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FVPKSoft%2Fgauth-decode.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FVPKSoft%2Fgauth-decode?ref=badge_large)
