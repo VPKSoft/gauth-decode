@@ -124,7 +124,15 @@ const decode = async (data: string) => {
  */
 const makeOtpAuthKey = (otpData: OtpDataWithBase32, useBase32Secret: boolean = true) => {
     // TODO::Proper URI builder for OTP!
-    return `otpauth://totp/${otpData.name}?secret=${useBase32Secret ? otpData.secretBase32 : otpData.secret}&issuer=${otpData.issuer}`;
+
+    // The name part should contain the issuer also, to fix this lets just change the issuer if they differ.
+    let issuerFromName = otpData.issuer;
+    const nameData = otpData.name.split(":");
+    if (nameData.length === 2 && nameData[0] !== otpData.issuer) {
+        issuerFromName = nameData[0];
+    }
+
+    return `otpauth://totp/${otpData.name}?secret=${useBase32Secret ? otpData.secretBase32 : otpData.secret}&issuer=${issuerFromName}`;
 };
 
 export type { OtpDataWithBase32 };
