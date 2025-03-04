@@ -1,4 +1,4 @@
-import { decode } from "./auth_exporter";
+import { decode } from "./AuthExporter";
 
 /**
  * Decodes the URI search parameter `data` base64 value.
@@ -26,4 +26,4 @@ const decodeMigrationUri = (otpauthMigration: string) => {
 
 export { decodeMigrationUriData, decodeMigrationUri };
 
-export { makeOtpAuthKey } from "./auth_exporter";
+export { makeOtpAuthKey } from "./AuthExporter";

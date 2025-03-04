@@ -1,7 +1,7 @@
 // Original copyright, MIT (C): krissrex, https://github.com/krissrex/google-authenticator-exporter/blob/master/src/index.js
-import * as protobuf from "protobufjs";
 import { Buffer } from "buffer/";
-import { base32 } from "./edbase32";
+import * as protobuf from "protobufjs";
+import { base32 } from "./EdBase32";
 
 const proto = `
 // LICENSE: GNU General Public License v3.0 to Beem Development (https://github.com/beemdevelopment)

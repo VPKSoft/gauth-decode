@@ -1,4 +1,4 @@
-import { decodeMigrationUriData } from "../src";
+import { decodeMigrationUriData } from "../src/Index";
 
 test("Decode otpauth-migration URI", async () => {
     const data = await decodeMigrationUriData("Ch8KBdFBKZJTEgpUZXN0IFRva2VuGgQyRkFTIAEoATACEAEYASAAKIji6ej7/////wE=");
