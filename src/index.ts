@@ -1,3 +1,4 @@
+// biome-ignore lint/style/useFilenamingConvention: index.ts should be lowercase
 import { decode } from "./AuthExporter";
 
 /**
