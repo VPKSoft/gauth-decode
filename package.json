@@ -2,9 +2,9 @@
     "name": "gauth-decode",
     "version": "0.1.1",
     "description": "A package to decode Google Authenticator export data",
-    "main": "./dist/Index.js",
-    "module": "./dist/Index.mjs",
-    "types": "./dist/Index.d.ts",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
     "files": [
         "dist"
     ],
